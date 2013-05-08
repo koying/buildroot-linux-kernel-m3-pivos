@@ -112,7 +112,7 @@ static struct switch_dev sdev = {   // android ics switch device
 #define HDMI_SINK_NO_EDID       // For sink no edid case. If HDMI CTS, undef HDMI_SINK_NO_EDID
 
 #ifdef AVOS
-static unsigned char init_flag=INIT_FLAG_POWERDOWN;
+static unsigned char init_flag=INIT_FLAG_POWERDOWN | INIT_FLAG_CEC_FUNC;
 static unsigned char init_powermode=0x80;
 #else
 static unsigned char init_flag=0;
