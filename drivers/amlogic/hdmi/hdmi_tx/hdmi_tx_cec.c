@@ -621,10 +621,10 @@ void cec_input_handle_message(void)
     case CEC_OC_GIVE_DEVICE_POWER_STATUS:
         cec_give_device_power_status(pcec_message);
         break;
-        */
      case CEC_OC_STANDBY:  	  
         cec_standby_irq();
         break;       
+        */
     case CEC_OC_USER_CONTROL_PRESSED:
         cec_user_control_pressed_irq();
         break;
